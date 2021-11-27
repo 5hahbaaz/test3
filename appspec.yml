@@ -2,12 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /var/www/html/
-    overwrite: yes
+    destination: /var/www/html/    
   - source: ./
     destination: /etc/testapp/
-    overwrite: yes
-file_exists_behavior: OVERWRITE
+file_exists_behavior: RETAIN
 
 hooks:
 
