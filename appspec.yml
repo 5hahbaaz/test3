@@ -10,7 +10,7 @@ file_exists_behavior: RETAIN
 hooks:
 
   BeforeInstall:
-   - location: /scripts/createbackup.sh
+   - location: /scripts/create_timed_backup.sh
      timeout: 300
      runas: root
    - location: /scripts/indexbackup.sh
